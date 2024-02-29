@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="css/portfolio.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+	<!----hero Section start---->
+	<div class="wrapper">
+		<header class="print">
+			<nav class="row">
+				<div class="col-2">
+					<a href="index.html" class="logo">Portfo<span>lio</span></a>
+				</div>
+				<ul class="col-8 text-end">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="resume.html">Resume</a></li>
+					<li><a href="https://github.com/Done-Yang">GitHub</a></li>
+					<!-- <li><a href="{% url 'blogs' %}">Blogs</a></li> -->
+				</ul>
+				<!-- <div class="col-2 text-end">
+					<buttom class="btn"><i class="fa-solid fa-sun"></i></buttom>
+				</div> -->
+			</nav>
+		</header>
+		<div class="contents">
+			<div class="hero">
+				<div class="content row">
+					<div class="col-12">
+						<h4>Hello, my name is</h4>
+						<h1 class="fname">Done Yang</span></h1>
+						<h6>I'am a Computer Science student, Who attempt to be <br> a full stack developer and develop
+							AI model</h6>
+						<!-- <div class="newslatter">
+							<h5 id="action">Command</h5>
+							<form action="{% url 'scm' %}" method="POST" class="messege">
+								{% csrf_token %}
+								<input type="text" name="message" id="messenge" placeholder="Your command here.." required>
+								<input type="submit" name="submit" id="messenge2" value="Send">
+							</form>
+						</div> -->
+					</div>
+					<!-- {% for cm in comment %}
+					<div class="show_cm">
+						<h6 id="cm">{{ cm.comment }}</h6><br>
+						<p>{{ Cm.ratting }}</p>
+					</div>
+					{% endfor %} -->
+				</div>
+			</div>
+
+			<!----About section start---->
+			<section class="about">
+				<div class="main">
+					<img src="images/my_profile.jpeg">
+					<div class="about-text">
+						<h2 id="pf">Profile</h2>
+						<h5>Aim To A Back-end Developer <span>& Develop AI Model</span></span></h5>
+						<p>I am a Computer Science student at the university, with a strong focus on web development
+							throughout my time here. I have gained expertise in both Front-end and Back-end development.
+							As a sophomore, I have honed my skills and I am now ready to work on web development
+							projects. You can trust me to deliver excellent results.</p>
+						<!-- <button type="button" class="button">Send E-mail</button> -->
+					</div>
+				</div>
+			</section>
+			<!-----service section start----------->
+			<div class="skills">
+				<div class="title">
+					<h2 id="sk">Skills</h2>
+				</div>
+				<!-- <div class="box">
+					{% for skill in skills %}
+					<div class="card">
+						{% if skill.icon %}
+						<img src="{{ skill.icon.url }}" alt="">
+						{% endif %}
+						<h5>{{ skill.title }}</h5>
+						<div class="pra">
+							<div class="pgm_lg">
+								<p>{{ skill.detial }}</p>
+							</div>
+		
+							<p style="text-align: center;">
+								<a class="button" href="{{ skill.performance }}">performance</a>
+							</p>
+						</div>
+					</div>
+					{% endfor %}
+				</div> -->
+				<div class="box">
+					<div class="card_">
+						<!-- <img src="../media/profile.png" alt=""> -->
+						<div class="d-flex justify-content-center text-primary icon"><i class="bi bi-person"></i></div>
+						<h5>Soft skills</h5>
+						<div class="pra">
+							<div class="pgm_lg">
+								<p>Problem solving, Time management, Able learn the new thing every times, Team work</p>
+							</div>
+							<p style="text-align: center;">
+								<a class="button" href="#">performance</a>
+							</p>
+						</div>
+					</div>
+					<div class="card_">
+						<!-- <img src="../media/profile.png" alt=""> -->
+						<div class="d-flex justify-content-center text-primary icon"><i class="bi bi-code-square"></i>
+						</div>
+						<h5>Computing Skills</h5>
+						<div class="pra">
+							<div class="pgm_lg">
+								<p>Python, Django, PHP, HTML-CSS, Javascript, Bootstrap, SQL, MySQL, AWS, Chat GPT</p>
+							</div>
+							<p style="text-align: center;">
+								<a class="button" href="#">performance</a>
+							</p>
+						</div>
+					</div>
+					<div class="card_">
+						<!-- <img src="../media/profile.png" alt=""> -->
+						<div class="d-flex justify-content-center text-primary icon"><i class="bi bi-translate"></i>
+						</div>
+						<h5>Languages</h5>
+						<div class="pra">
+							<div class="pgm_lg">
+								<p>English <br> Thai <br> Lao, Hmong</p>
+							</div>
+							<p style="text-align: center;">
+								<a class="button" href="#">performance</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pgm_chart">
+				<h5 class="wepr">Experiences Rating</h5>
+				<div class="chart">
+					<div class="row mt- 5">
+						<!-- {% block add_sheet %}{% endblock %} -->
+					</div>
+					<div class="sheet">
+						<canvas id="myChart"></canvas>
+						<script>
+							const ctx = document.getElementById('myChart').getContext('2d');
+							const myChart = new Chart(ctx, {
+								type: 'bar',
+								data: {
+									labels: ['python', 'HTML-CSS', 'PHP', 'Django', 'JavaScript', 'Java', 'MySQL', 'Git-GitHub'],
+							datasets: [{
+								label: 'Progamming Language',
+								data: [95, 80, 72, 70, 10, 5, 30, 76],
+								backgroundColor: [
+									'rgba(255, 99, 132, 0.2)',
+									'rgba(54, 162, 235, 0.2)',
+									'rgba(255, 206, 86, 0.2)',
+									'rgba(75, 192, 192, 0.2)',
+									'rgba(153, 102, 255, 0.2)',
+									'rgba(255, 159, 64, 0.2)'
+								],
+									borderColor: [
+										'rgba(255, 99, 132, 1)',
+										'rgba(54, 162, 235, 1)',
+										'rgba(255, 206, 86, 1)',
+										'rgba(75, 192, 192, 1)',
+										'rgba(153, 102, 255, 1)',
+										'rgba(255, 159, 64, 1)'
+									],
+										borderWidth: 1
+									}]
+								},
+							options: {
+								scales: {
+									y: {
+										beginAtZero: true
+									}
+								}
+							}
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+			<!------Contact Me------>
+			<div class="contact-me">
+				<p>Let Me Be A Part Of Your Oganization.</p>
+				<a class="button-two" href="#">Send E-mail</a>
+			</div>
+		</div>
+		<!------footer start--------->
+		<footer class="print">
+			<p>Mr. Done Yang</p>
+			<p>Visit More About Me Here</p>
+			<div class="social">
+				<a href="https://www.facebook.com/ddone.yang"><i class="fab fa-facebook-f f"></i></a>
+				<a href="https://www.instagram.com/yyydone/"><i class="fab fa-instagram ig"></i></a>
+				<a href="https://www.tiktok.com/@ddoneyang?_t=8YC316zY8bi&_r=1"><i class="fab fa-tiktok tt"></i></a>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

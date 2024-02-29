@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/resume.css">
+</head>
+
+<body>
+    <!----hero Section start---->
+    <div class="wrapper">
+        <header class="print">
+            <nav class="row">
+                <div class="col-2">
+                    <a href="index.html" class="logo">Portfo<span>lio</span></a>
+                </div>
+                <ul class="col-8 text-end">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="https://github.com/Done-Yang">GitHub</a></li>
+                    <!-- <li><a href="{% url 'blogs' %}">Blogs</a></li> -->
+                </ul>
+                <!-- <div class="col-2 text-end">
+					<buttom class="btn"><i class="fa-solid fa-sun"></i></buttom>
+				</div> -->
+            </nav>
+        </header>
+        <div class="contents">
+            <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+            <button id="print" class="print"><i class="fas fa-print"></i></button>
+            <div class="resume">
+                <div class="resume_left">
+                    <div class="resume_profile">
+                        <img src="images/my_profile.jpeg" alt="profile_pic">
+                    </div>
+                    <div class="title">
+                        <p class="bold" style="margin-left: 10%;">Mr. Done Yang</p>
+                    </div>
+                    <div class="resume_content">
+                        <div class="resume_item resume_info">
+                            <div class="title">
+                                <p class="bold">Self Infomation</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-map"></i>
+                                    </div>
+                                    <div class="data">
+                                        Donkoi, Sisadtanad, Laos
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div class="data">
+                                        +856 2078671726
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="data">
+                                        doneyang2003 <br> @gmail.com
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="resume_item resume_skills">
+                            <div class="title">
+                                <p class="bold">Computing Skills</p>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <p class="skill_name">HTML-CSS, python, Django Framework, JavaScript, PHP, Mysql,
+                                        sql, PHPmyaddmin, Docker container, Web hosting, AWS</p>
+                                </li>
+                                <!-- <li>
+                        <div class="skill_name">
+                            CSS
+                        </div>
+                        <div class="skill_progress">
+                            <span style="width: 60%;"></span>
+                        </div>
+                        <div class="skill_per">60%</div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            python
+                        </div>
+                        <div class="skill_progress">
+                            <span style="width: 90%;"></span>
+                        </div>
+                        <div class="skill_per">90%</div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            Django
+                        </div>
+                        <div class="skill_progress">
+                            <span style="width: 80%;"></span>
+                        </div>
+                        <div class="skill_per">80%</div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            JS
+                        </div>
+                        <div class="skill_progress">
+                            <span style="width: 10%;"></span>
+                        </div>
+                        <div class="skill_per">10%</div>
+                    </li>
+                    <li>
+                        <div class="skill_name">
+                            PHP
+                        </div>
+                        <div class="skill_progress">
+                            <span style="width: 70%;"></span>
+                        </div>
+                        <div class="skill_per">70%</div>
+                    </li> -->
+                            </ul>
+                        </div>
+                        <div class="resume_item resume_social">
+                            <div class="title">
+                                <p class="bold">Soft Skills</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="data">
+                                        <p>Time management</p>
+                                </li>
+                                <li>
+                                    <div class="data">
+                                        <p>Team work</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="data">
+                                        <p>Ready to study the new thing every time</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="data">
+                                        <p>Study 10 hours per day</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="resume_item resume_social">
+                            <div class="title">
+                                <p class="bold">Languages</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="data">
+                                        <p>English, Thai, Lao, Hmong</p>
+                                </li>
+                                <!-- <li>
+                        <div class="data">
+                            <p>Thai</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="data">
+                            <p>Lao</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="data">
+                            <p>Hmong</p>
+                        </div>
+                    </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume_right">
+                    <div class="resume_item resume_about">
+                        <div class="title">
+                            <p class="bold">Profile</p>
+                        </div>
+                        <p>I am a Computer Science student with a strong focus on web development. I have gained
+                            expertise in Back-end development and pupose to create AI model to help the backend
+                            processing</p>
+                    </div>
+                    <div class="resume_item resume_work">
+                        <div class="title">
+                            <p class="bold">Experiences</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="date">2022 - Present (an iATER member)</div>
+                                <div class="info">
+                                    <p>Studying 10 hours per day and sharing knowledge with high school students while
+                                        at the Institute of Advanced Technology Education & Research</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date">29-30/10/2023 (Competition)</div>
+                                <div class="info">
+                                    <p>I was one of 10 people in the final frontend development competition of Dev Tour
+                                        Laos-Programming Contest, hold by LAILAOLAB</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date">2020 - 2022 (Rugby Coach)</div>
+                                <div class="info">
+                                    <!-- <p class="semi-bold"></p> -->
+                                    <p>I was a coach leading childrens aged 11 to 16 to play rugby sport and learn life
+                                        skills through (Rugby Pass it Back)</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume_item resume_education">
+                        <div class="title">
+                            <p class="bold">Education</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="date">2022 - 2024</div>
+                                <div class="info">
+                                    <p class="semi-bold">Deploma of Computer Science (Lao-Korea College)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="date">2020 - 2021</div>
+                                <div class="info">
+                                    <p class="semi-bold">Graduate High School (ມ.ສ ສີບຸນເຮືອງ)</p>
+                                </div>
+                            </li>
+                            <li class="longer">
+                                <div class="date">2020 - 2021</div>
+                                <div class="info">
+                                    <p class="semi-bold">Special Classes</p>
+                                    <p>Graduate English advance Cours in ICDI center</p>
+                                    <p>Graduate Miss office Cours in high school</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="resume_item resume_hobby print">
+            <div class="title">
+                <p class="bold">Hobbies</p>
+            </div>
+            <ul class="icons">
+                <li><i class="fas fa-book"></i></li>
+                <li><i class="fas fa-gamepad"></i></li>
+                <li><i class="fas fa-music"></i></li>
+                <li><i class="fa-solid fa-dumbbell"></i></li>
+            </ul>
+        </div> -->
+                </div>
+            </div>
+            <script>
+                const printBtn = document.getElementById('print');
+
+                printBtn.addEventListener('click', function () {
+                    print();
+                })
+            </script>
+            <!------footer start--------->
+            <footer class="print">
+                <p>Mr. Done Yang</p>
+                <p>Visit More About Me Here</p>
+                <div class="social">
+                    <a href="https://www.facebook.com/ddone.yang"><i class="fab fa-facebook-f f"></i></a>
+                    <a href="https://www.instagram.com/yyydone/"><i class="fab fa-instagram ig"></i></a>
+                    <a href="https://www.tiktok.com/@ddoneyang?_t=8YC316zY8bi&_r=1"><i class="fab fa-tiktok tt"></i></a>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
